@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'league';
+    src: url('../League-Of-Legends-Logo-Font/') format('opentype'); 
+}
+
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    position: relative;
+}
+#section-1 {
+    height: 100vh;
+    background: url('../img/GeiIFCfWsAAYs2V.jfif') center/cover no-repeat;
+}
+.navbar-logo{
+    width:40px;
+}
+.navbar{
+   background-color: black;
+   
+}
+#navbarNav ul li a{
+   color:goldenrod;
+   font-family:'league';
+}
+.navbar-toggler-icon {
+    background-image: none; /* Remove the default background image */
+    color: #DAA520; /* Gold color */
+    font-size: 1.5rem; /* Optional: Adjust the icon size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Optional: Adjust width */
+    height: 30px; /* Optional: Adjust height */
+}
+
+.navbar-toggler-icon::before {
+    content: '\2630'; /* Unicode for hamburger menu icon */
+}
+
+
+.sec-1-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:55vh;
+   
+    font-family: 'league';
+
+    h1{
+        font-size: 4em; 
+        color:goldenrod;	
+        text-shadow: 6px 6px 0px rgba(0,0,0,0.6);
+    }
+    p{
+        font-size: 1.5em;
+        color:goldenrod;
+        text-shadow: 2px 2px 0px rgba(0,0,0,0.6);
+    }
+    a{
+        text-shadow: 2px 2px 0px rgba(0,0,0,0.6);
+    }
+    .sec-1-link{
+        color:white;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    .sec-1-link:hover{
+        text-decoration: underline;
+    }
+}
+
+#section-2{
+
+    h1{
+        text-align: center;
+        font-size: 4em; 
+        color:goldenrod;
+        text-shadow: 4px 4px 0px rgba(100, 92, 16, 0.63);
+    }
+    .card{
+        border: none;
+    }
+    .card-body{
+        h5{
+            color:goldenrod;
+        }
+        a{
+            background-color: goldenrod;
+            border: 2px solid goldenrod;
+            transition: 0.4s;
+
+        }
+        a:hover{
+            border: 2px solid rgb(185, 139, 22);
+            color: rgb(236, 226, 198); ;
+        }
+    }
+
+}
+
+
+#section-3,#section-2,#section-4,#section-5{
+    background-color: rgb(121, 32, 32);
+    font-family: 'league';
+}
+.sec-3-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'league';
+    text-align: center;
+    padding:40px 0;
+
+    h1{
+        font-size: 4em; 
+        color:goldenrod;  
+        text-shadow: 4px 4px 0px rgba(100, 92, 16, 0.63);
+
+    }
+    p{
+        font-size: 1.5em;
+        color:goldenrod;
+        text-shadow: 4px 4px 0px rgba(100, 92, 16, 0.63);
+
+    }
+}
+.carousel-header {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+#section-3{
+    .carousel-indicators button{
+        background-color: goldenrod;
+    }
+}
+
+#section-4 {
+
+    .sec-4-header{
+        padding:40px 0;
+        font-size:4em;
+        color:goldenrod;
+        text-shadow: 4px 4px 0px rgba(100, 92, 16, 0.63);
+
+    }
+
+
+}
+
+
+#section-5{
+    h2{
+        text-align: center;
+        padding: 50px 0;
+        font-size: 3em;
+        color:goldenrod;
+        text-shadow: 4px 4px 0px rgba(100, 92, 16, 0.63);
+
+    }
+    padding-bottom: 100px;
+}
+
+.accordion {
+    background-color: #750000; 
+    border: 1px solid #e22a09; 
+    border-radius: 0.25rem;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #b8860b; 
+}
+
+.accordion-header {
+    background-color: #900000; 
+    color: #ffd700; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #b22222; 
+    color: #ffec8b; 
+}
+
+.accordion-button {
+    background-color: #900000; 
+    color: #ffd700; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #b22222; 
+    color: #ffec8b; 
+}
+
+.accordion-collapse {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #750000;
+    color: #ffd700; 
+    transition: max-height 0.5s ease;
+}
+
+.accordion-collapse.show {
+    max-height: 500px; 
+}
+
+.accordion-body {
+    padding: 1rem;
+    background-color: #8b0000; 
+    color: #ffec8b; 
+    border-top: 1px solid #b8860b; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form{
+    background-color: #1a1a2e;
+}
+.form-container {
+    background-color: #2e2e3f;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+.form-label {
+    color: #ffd700;
+}
+.form-control, .form-select {
+    background-color: #1a1a2e;
+    color: #f0f0f0;
+    border: 1px solid #ffd700;
+}
+.form-control:focus, .form-select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ffd700;
+    border-color: #ffd700;
+}
+.btn-warning {
+    background-color: #ffd700;
+    color: #1a1a2e;
+    border: none;
+}
+.btn-warning:hover {
+    background-color: #ffcc00;
+    color: #1a1a2e;
+}
+
+.container-2{
+    width:1000px;
+    margin: 0 auto;
+}
+
+@media (max-width: 648px) {
+
+    .carousel-header{
+        top:50%;
+        h1{
+        font-size: 1em;
+    }
+    p{
+        font-size: 0.7em;
+    }
+    }
+    
+}
